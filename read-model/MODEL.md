@@ -4,56 +4,56 @@
   <a href="#decisões-arquiteturais">Decisões Arquiteturais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#estrutura-do-projeto">Estrutura do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#funcionamento">Funcionamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/https-shini/web-chat">Voltar</a>
+  <a href="#sobre-a-api">Sobre a API</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/https-shini/shopping-cart">Voltar</a>
 </p>
 
 <br>
 
 ## Decisões Arquiteturais:
 
-- O Chat Web segue uma arquitetura cliente-servidor, onde o frontend é responsável pela interface do usuário e o backend gerencia a lógica de negócios e a comunicação com o servidor WebSocket. <br>
-- WebSocket: O uso do protocolo WebSocket permite uma comunicação bidirecional em tempo real entre clientes e servidor, facilitando a troca instantânea de mensagens.
-
-<br>
+- O projeto Carrinho de Compras com React JS segue uma arquitetura frontend, onde o frontend é responsável pela interface do usuário e pela lógica de interação com o usuário.
+- Utiliza React JS como biblioteca principal para construção de interfaces de usuário interativas e dinâmicas.
+- Integra a API do Mercado Livre para obtenção de dados de produtos e atualização dinâmica da lista de produtos disponíveis.
 
 ## Estrutura do projeto
 
-➜ **Frontend:**
+➜  **HTML5:**
+   - O frontend inclui arquivos HTML para estruturar o conteúdo da página, embora a maior parte da estrutura seja gerada dinamicamente pelo React JS.
 
-1. **HTML (index.html):**
-   - O arquivo HTML é responsável pela estruturação do conteúdo da página. Ele define os elementos como formulários de entrada de usuário, área de exibição de mensagens e botões de envio de mensagens.
+➜  **CSS3:**
+   - Utiliza arquivos CSS para estilizar e projetar a interface do usuário.
 
-2. **CSS (style.css):**
-   - O arquivo CSS é responsável pela estilização e design da interface do usuário. Ele define as cores, fontes, layouts e estilos visuais que tornam a aplicação atraente e fácil de usar.
+➜  **JavaScript:**
+   - Além do React JS, o frontend inclui arquivos JavaScript para adicionar interatividade à página. Os arquivos JavaScript manipulam eventos do usuário, como cliques em botões de adição/remoção de produtos do carrinho, e atualizam dinamicamente o estado da interface do usuário.
 
-3. **JavaScript (script.js):**
-   - O arquivo JavaScript é responsável por adicionar interatividade à página. Ele manipula eventos do usuário, como cliques e submissões de formulários, e se comunica com o servidor para enviar e receber mensagens em tempo real. Além disso, o JavaScript também é responsável por atualizar dinamicamente a interface do usuário para refletir novas mensagens recebidas.
+➜  **React JS:**
+   - O frontend é desenvolvido com React JS, uma biblioteca JavaScript para construção de interfaces de usuário.
+   - Componentes React são utilizados para modularizar a aplicação e gerenciar o estado da interface do usuário de forma eficiente.
 
-<br>
+➜  **API do Mercado Livre:**
+   - O frontend interage com a API do Mercado Livre para obter informações sobre os produtos disponíveis, como títulos, descrições, preços e imagens.
 
-➜ **Backend:**
+## **Sobre a API:**
 
-1. **Node.js (server.js):**
-   - O arquivo `server.js` é o principal arquivo do backend, que utiliza o Node.js como plataforma de tempo de execução do JavaScript no servidor. Ele inicializa e configura o servidor WebSocket para lidar com conexões de clientes, recebe e envia mensagens entre os clientes conectados e gerencia a lógica de negócios da aplicação.
-
-2. **WebSocket (ws):**
-   - O WebSocket é um protocolo de comunicação bidirecional que permite a troca de mensagens em tempo real entre o cliente e o servidor. No contexto deste projeto, o servidor WebSocket é responsável por receber mensagens dos clientes e retransmiti-las para todos os outros clientes conectados, garantindo que todas as mensagens sejam distribuídas em tempo real para todos os participantes do chat.
-
-<br>
+<p>
+  A API do Mercado Livre é uma interface RESTful que fornece acesso a uma ampla variedade de produtos disponíveis na plataforma do Mercado Livre. Ela oferece endpoints bem documentados para buscar informações específicas, como detalhes dos produtos, preços, descrições, imagens e muito mais.
+<br><br>
+Além disso, a API suporta recursos avançados, como pesquisa avançada, filtragem e paginação, permitindo aos desenvolvedores personalizar suas consultas de acordo com suas necessidades específicas. A autenticação é necessária para acessar a maioria dos endpoints, utilizando métodos como OAuth 2.0.
+<br><br>
+A API do Mercado Livre é uma ferramenta valiosa para desenvolvedores que desejam criar aplicativos relacionados a comércio eletrônico, oferecendo uma fonte confiável de dados sobre produtos disponíveis para compra na plataforma.
+</p>
 
 ## **Funcionamento:**
 
-- Quando um usuário acessa a aplicação, ele é apresentado com um formulário de login onde pode inserir seu nome.
-- Após inserir o nome e clicar em "Entrar", o usuário é redirecionado para a área de chat.
-- No chat, o usuário pode digitar mensagens no campo de entrada e enviar.
-- Quando uma mensagem é enviada, o JavaScript no frontend envia a mensagem para o servidor WebSocket no backend.
-- O servidor WebSocket recebe a mensagem e a retransmite para todos os outros clientes conectados.
-- As mensagens recebidas são exibidas dinamicamente na área de chat de todos os clientes, permitindo uma conversa em tempo real entre os usuários.
+- Os usuários acessam o aplicativo através de um navegador web.
+- Eles podem visualizar uma lista de produtos disponíveis na tela inicial.
+- Os usuários têm a opção de buscar por produtos específicos utilizando o campo de busca.
+- Ao adicionar produtos ao carrinho, o estado da aplicação é atualizado dinamicamente para refletir as mudanças.
+- Os usuários podem remover produtos do carrinho, atualizando novamente o estado da aplicação.
 
 <br>
 
-> **Informações Importantes sobre a Aplicação** <br>
-A aplicação suporta comunicação em tempo real entre os usuários através do protocolo WebSocket. <br>
-Os usuários podem ingressar na aplicação fornecendo um nome de usuário no formulário de login. <br>
-As mensagens enviadas por um usuário são instantaneamente exibidas para todos os outros participantes do chat. <br>
-O frontend é responsivo e foi projetado para ser compatível com diferentes dispositivos e tamanhos de tela. <br>
+> **Informações Importantes sobre o Aplicativo** <br>
+O projeto Carrinho de Compras com React JS permite aos usuários explorar e adicionar produtos ao carrinho de compras utilizando a API do Mercado Livre. <br>
+O frontend é desenvolvido com ReactJS para uma experiência de usuário dinâmica e interativa. <br>
