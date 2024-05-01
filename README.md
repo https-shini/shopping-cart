@@ -13,7 +13,7 @@
 
 ## ☆ Hospedagem
 - Acesse o link abaixo e veja o código hospedado online.<br>
-https://movieslib-krd.vercel.app
+https://shopping-cart-in-reactjs.vercel.app
 
 ## ☆ Tecnologias
 - HTML
