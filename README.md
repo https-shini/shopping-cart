@@ -24,7 +24,7 @@ https://movieslib-krd.vercel.app
 
 ## ☆ Projeto
 ➜ [Como contribuir?](./read-model/CONTRIBUTING.md) <br>
-➜ [Documentação aprofundada](./read-model/MODEL.md) 
+➜ [Documentação aprofundada](read-model/MODEL.md) 
 
 <br>
 
