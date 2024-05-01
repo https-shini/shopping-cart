@@ -9,7 +9,7 @@
 </p>
 <br>
 
-![Preview](./dist/banner.png)
+![Preview](./read-model/img/banner.png)
 
 ## ☆ Hospedagem
 - Acesse o link abaixo e veja o código hospedado online.<br>
