@@ -23,8 +23,8 @@ https://movieslib-krd.vercel.app
 - API do Mercado Livre
 
 ## ☆ Projeto
-➜ [Como contribuir?](./readme/CONTRIBUTING.md) <br>
-➜ [Documentação aprofundada](./readme/MODEL.md) 
+➜ [Como contribuir?](./read-model/CONTRIBUTING.md) <br>
+➜ [Documentação aprofundada](./read-model/MODEL.md) 
 
 <br>
 
