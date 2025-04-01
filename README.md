@@ -1,21 +1,60 @@
-# Carrinho de Compras com React JS
+<h1 align="center">Carrinho de Compras com React JS</h1>
 
-Este é um projeto de carrinho de compras desenvolvido com React JS. Ele permite listar produtos na tela, buscar produtos consumindo a API do Mercado Livre, adicionar produtos e remover produtos do carrinho.
+<p align="center">
+  <a href="#-hospedagem">Hospedagem</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;
+</p>
+<br>
 
-## Funcionalidades
+![Preview](./read-model/img/banner.png)
 
+## ☆ Hospedagem
+- Acesse o link abaixo e veja o código hospedado online.<br>
+https://shopping-cart-in-reactjs.vercel.app
+
+## ☆ Tecnologias
+- HTML
+- CSS
+- JavaScript
+- ReactJS
+- API do Mercado Livre
+
+## ☆ Projeto
+➜ [Como contribuir?](./read-model/CONTRIBUTING.md) <br>
+➜ [Documentação aprofundada](read-model/MODEL.md) 
+
+<br>
+
+Este projeto é um carrinho de compras desenvolvido com React JS, permitindo aos usuários listar produtos, buscar produtos na API do Mercado Livre, adicionar produtos ao carrinho e remover produtos do carrinho. Ele utiliza tecnologias como HTML5, CSS3, JavaScript e React JS para a construção da interface do usuário, e consome a API do Mercado Livre para obter dados de produtos. O projeto oferece funcionalidades básicas de um carrinho de compras online e pode ser executado localmente após clonar o repositório.
+
+**Funcionalidades Principais:**
 - Listagem de produtos: exibe uma lista de produtos obtidos da API do Mercado Livre.
 - Busca de produtos: permite pesquisar produtos com base em palavras-chave, consumindo a API do Mercado Livre para obter os resultados.
 - Adição de produtos ao carrinho: permite adicionar produtos ao carrinho de compras.
 - Remoção de produtos do carrinho: possibilita remover produtos do carrinho de compras.
 
-## Tecnologias utilizadas
+**Estrutura do Projeto:**
 
-- React JS: biblioteca JavaScript para construção de interfaces de usuário.
-- HTML5: linguagem de marcação para estruturar o conteúdo da aplicação.
-- CSS3: linguagem de estilo para estilizar a interface do usuário.
-- API do Mercado Livre: utilizada para obter dados de produtos.
+- Frontend: Desenvolvido com React JS, o frontend consiste em diferentes componentes para exibir a interface do usuário e interagir com a API do Mercado Livre.
 
-## Playlist no Youtube
+**Uso do Projeto:**
+- Os usuários acessam o aplicativo através de um navegador web.
+- Eles podem listar produtos, buscar produtos, adicionar produtos ao carrinho e remover produtos do carrinho.
 
-Se você não acompanhou a criação desse projeto, dá uma conferida [aqui](https://www.youtube.com/playlist?list=PLdtmpu_1ITQKuHMG4s0wUMa55OdsYeWw0).
+## ☆ Layout
+Obtenha uma perspectiva detalhada do layout do projeto por meio da imagem abaixo.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/https-shini/shopping-cart/main/read-model/img/001.png" width=400 heigth=350 />
+<img src="https://raw.githubusercontent.com/https-shini/shopping-cart/main/read-model/img/002.png" width=400 heigth=350 />
+<img src="https://raw.githubusercontent.com/https-shini/shopping-cart/main/read-model/img/003.png" width=400 heigth=350 />
+<img src="https://raw.githubusercontent.com/https-shini/shopping-cart/main/read-model/img/004.png" width=400 heigth=350 />
+
+</div>
+
+## ☆ Licença
+Esse projeto está sob a [licença MIT](/LICENSE).
