@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchProducts } from "../api/fetchProducts";
-import ProductCard from "./ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 import Loading from "./Loading";
 
 const Products = () => {
