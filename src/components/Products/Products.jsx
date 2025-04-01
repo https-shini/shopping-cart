@@ -1,31 +1,40 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useState, useEffect } from "react";
+import { fetchProducts } from "../api/fetchProducts";
+import ProductCard from "./ProductCard";
+import Loading from "./Loading";
 
-import './Products.css';
-import fetchProducts from '../../api/fetchProducts';
-import ProductCard from '../ProductCard/ProductCard';
-import Loading from '../Loading/Loading';
-import AppContext from '../../context/AppContext';
+const Products = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-function Products() {
+    useEffect(() => {
+        const getProducts = async () => {
+            try {
+                setLoading(true);
+                const productsData = await fetchProducts();
+                setProducts(productsData);
+            } catch (err) {
+                setError(err.message || "Erro ao carregar produtos");
+            } finally {
+                setLoading(false);
+            }
+        };
 
-  const { products, setProducts, loading, setLoading } = useContext(AppContext);
-  
+        getProducts();
+    }, []);
 
-  useEffect(() => {
-    fetchProducts('iphone').then((response) => {
-      setProducts(response);
-      setLoading(false);
-    });
-  }, []);
+    if (loading) return <Loading />;
+    if (error) return <div className="error-message">{error}</div>;
+    if (!products.length) return <div>Nenhum produto encontrado</div>;
 
-  return (
-    (loading && <Loading /> ) || (
-      <section className="products container">
-        {products.map((product) => <ProductCard key={product.id} data={product} />)}
-      </section>
-    )
-    
-  );
-}
+    return (
+        <div className="products-container">
+            {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+            ))}
+        </div>
+    );
+};
 
 export default Products;
